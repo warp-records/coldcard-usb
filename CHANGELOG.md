@@ -1,6 +1,10 @@
-## 1.0.5
+## 1.0.6
 
 - Updated android build tools
+
+## 1.0.5 (RETRACTED)
+
+Retracted due to android build bug
 
 ## 1.0.4
 

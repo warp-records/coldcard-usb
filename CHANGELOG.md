@@ -1,3 +1,7 @@
+## 1.0.7
+
+- Fixed android 16 devices not being able to establish connection
+
 ## 1.0.6
 
 - Updated android build tools

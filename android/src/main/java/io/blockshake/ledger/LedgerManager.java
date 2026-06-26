@@ -50,7 +50,7 @@ public class LedgerManager {
         connection.setConfiguration(configuration);
 
         // Find the interface
-        UsbInterface usbInterface = findInterface(device, 255);
+        UsbInterface usbInterface = findInterface(device, 3);
         if (usbInterface == null) {
             throw new LedgerException(0x60003, "USB interface not found.");
         }
@@ -62,8 +62,8 @@ public class LedgerManager {
         }
 
         // Find the endpoints
-        UsbEndpoint endpointIn = findEndpoint(device, 3, 0x80);
-        UsbEndpoint endpointOut = findEndpoint(device, 3, 0x00);
+        UsbEndpoint endpointIn = findEndpoint(device, 4, 0x80);
+        UsbEndpoint endpointOut = findEndpoint(device, 4, 0x00);
 
         if (endpointIn == null || endpointOut == null ){
             throw new LedgerException(0x60005, "USB endpoints not found.");

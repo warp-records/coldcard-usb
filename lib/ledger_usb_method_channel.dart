@@ -1,13 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:ledger_usb_plus/usb_device.dart';
 
+import 'usb_device.dart';
 import 'ledger_usb_platform_interface.dart';
 
-LedgerUsbPlatform createPlatformInstance() => MethodChannelLedgerUsb();
-
-/// An implementation of [LedgerUsbPlatform] that uses method channels.
-class MethodChannelLedgerUsb extends LedgerUsbPlatform {
+class MethodChannelColdcardUsb extends ColdcardUsbPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
   final methodChannel = const MethodChannel('ledger_usb');

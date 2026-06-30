@@ -1,29 +1,19 @@
 import 'dart:typed_data';
-import 'package:ledger_usb_plus/usb_device.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-import 'ledger_usb_method_channel.dart'
-    if (dart.library.html) 'web_ledger_usb.dart'
-    if (dart.library.js) 'web_ledger_usb.dart'
-    if (dart.library.js_interop) 'web_ledger_usb.dart';
+import 'usb_device.dart';
+import 'ledger_usb_method_channel.dart';
 
-abstract class LedgerUsbPlatform extends PlatformInterface {
-  /// Constructs a LedgerUsbPlatform.
-  LedgerUsbPlatform() : super(token: _token);
+abstract class ColdcardUsbPlatform extends PlatformInterface {
+  ColdcardUsbPlatform() : super(token: _token);
 
   static final Object _token = Object();
 
-  static LedgerUsbPlatform _instance = createPlatformInstance();
+  static ColdcardUsbPlatform _instance = MethodChannelColdcardUsb();
 
-  /// The default instance of [LedgerUsbPlatform] to use.
-  ///
-  /// Defaults to [MethodChannelLedgerUsb] or [WebLedgerUsb] if running on web.
-  static LedgerUsbPlatform get instance => _instance;
+  static ColdcardUsbPlatform get instance => _instance;
 
-  /// Platform-specific implementations should set this with their own
-  /// platform-specific class that extends [LedgerUsbPlatform] when
-  /// they register themselves.
-  static set instance(LedgerUsbPlatform instance) {
+  static set instance(ColdcardUsbPlatform instance) {
     PlatformInterface.verifyToken(instance, _token);
     _instance = instance;
   }

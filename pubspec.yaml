@@ -1,9 +1,7 @@
-name: ledger_usb_plus
-description: A Flutter plugin to operate a Ledger Nano device over USB
-version: 1.0.8
-homepage: https://github.com/vespr-wallet/ledger-usb-plus
-repository: https://github.com/vespr-wallet/ledger-usb-plus
-issue_tracker: https://github.com/vespr-wallet/ledger-usb-plus/issues
+name: coldcard_usb
+description: A Flutter plugin to operate a Coldcard device over USB
+version: 1.0.0
+publish_to: none
 
 environment:
   sdk: '>=3.3.0 <4.0.0'

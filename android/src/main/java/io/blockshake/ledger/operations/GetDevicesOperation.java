@@ -1,4 +1,4 @@
-package io.blockshake.ledger.operations;
+package io.cakewallet.coldcardusb.operations;
 
 import android.content.Context;
 import android.hardware.usb.UsbDevice;
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import io.blockshake.ledger.LedgerManager;
+import io.cakewallet.coldcardusb.LedgerManager;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 

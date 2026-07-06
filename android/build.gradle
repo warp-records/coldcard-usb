@@ -1,4 +1,4 @@
-group 'io.blockshake.ledger'
+group 'io.cakewallet.coldcardusb'
 version '1.0'
 
 buildscript {
@@ -25,7 +25,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 36
-    namespace 'io.blockshake.ledger'
+    namespace 'io.cakewallet.coldcardusb'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17

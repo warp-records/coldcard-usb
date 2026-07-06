@@ -1,9 +1,9 @@
-package io.blockshake.ledger.operations;
+package io.cakewallet.coldcardusb.operations;
 
 import android.content.Context;
 
-import io.blockshake.ledger.LedgerException;
-import io.blockshake.ledger.LedgerManager;
+import io.cakewallet.coldcardusb.LedgerException;
+import io.cakewallet.coldcardusb.LedgerManager;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 

@@ -1,4 +1,4 @@
-package io.blockshake.ledger;
+package io.cakewallet.coldcardusb;
 
 public class LedgerException extends Exception{
     final int errorCode;

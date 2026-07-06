@@ -1,17 +1,17 @@
-package io.blockshake.ledger;
+package io.cakewallet.coldcardusb;
 
 import android.content.Context;
 import android.hardware.usb.UsbManager;
 
 import androidx.annotation.NonNull;
 
-import io.blockshake.ledger.operations.CloseOperation;
-import io.blockshake.ledger.operations.ConnectOperation;
-import io.blockshake.ledger.operations.GetDevicesOperation;
-import io.blockshake.ledger.operations.MethodCallRegistry;
-import io.blockshake.ledger.operations.RequestPermissionOperation;
-import io.blockshake.ledger.operations.TransferInOperation;
-import io.blockshake.ledger.operations.TransferOutOperation;
+import io.cakewallet.coldcardusb.operations.CloseOperation;
+import io.cakewallet.coldcardusb.operations.ConnectOperation;
+import io.cakewallet.coldcardusb.operations.GetDevicesOperation;
+import io.cakewallet.coldcardusb.operations.MethodCallRegistry;
+import io.cakewallet.coldcardusb.operations.RequestPermissionOperation;
+import io.cakewallet.coldcardusb.operations.TransferInOperation;
+import io.cakewallet.coldcardusb.operations.TransferOutOperation;
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;

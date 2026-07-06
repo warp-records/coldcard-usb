@@ -26,6 +26,5 @@ flutter:
   plugin:
     platforms:
       android:
-        package: io.blockshake.ledger
+        package: io.cakewallet.coldcardusb
         pluginClass: LedgerUsbPlugin
-

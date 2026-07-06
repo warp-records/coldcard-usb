@@ -1,4 +1,4 @@
-package io.blockshake.ledger.operations;
+package io.cakewallet.coldcardusb.operations;
 
 import android.hardware.usb.UsbManager;
 

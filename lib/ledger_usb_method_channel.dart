@@ -7,7 +7,7 @@ import 'ledger_usb_platform_interface.dart';
 class MethodChannelColdcardUsb extends ColdcardUsbPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('ledger_usb');
+  final methodChannel = const MethodChannel('coldcard_usb');
 
   @override
   Future<List<UsbDevice>> getDevices() async {

@@ -28,7 +28,7 @@ public class LedgerUsbPlugin implements FlutterPlugin, MethodCallHandler {
 
     @Override
     public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
-        channel = new MethodChannel(binding.getBinaryMessenger(), "ledger_usb");
+        channel = new MethodChannel(binding.getBinaryMessenger(), "coldcard_usb");
         channel.setMethodCallHandler(this);
         context = binding.getApplicationContext();
         usbManager = (UsbManager) context.getSystemService(Context.USB_SERVICE);
